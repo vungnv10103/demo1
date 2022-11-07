@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "315518443720",
+    "project_id": "realtimedatabase-demo-78d62",
+    "storage_bucket": "realtimedatabase-demo-78d62.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:315518443720:android:7c6267c9b48215357f05fd",
+        "android_client_info": {
+          "package_name": "com.fpoly.realtimedatabase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "315518443720-aai9rqbm0ghrq1uinbahj1ulb84anp29.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fpoly.realtimedatabase",
+            "certificate_hash": "71ab70acef06e70a723ea346f3d653d89bf5efdb"
+          }
+        },
+        {
+          "client_id": "315518443720-3qh5h67eknnrcduk858c7eg5l79en25p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGheBqfdWxxJSSFQbo-zXE8xdfB0peuPM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "315518443720-3qh5h67eknnrcduk858c7eg5l79en25p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
