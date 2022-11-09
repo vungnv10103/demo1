@@ -1,5 +1,7 @@
 package com.fpoly.realtimedatabase;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
@@ -36,9 +38,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 // Write a message to the database
                 FirebaseDatabase database = FirebaseDatabase.getInstance();
-                DatabaseReference myRef = database.getReference("content");
+                DatabaseReference myRef = database.getReference("db/user/1/id");
 
-                myRef.setValue(edContent.getText().toString().trim());
+                myRef.setValue(Integer.parseInt(edContent.getText().toString().trim()), new DatabaseReference.CompletionListener() {
+                    @Override
+                    public void onComplete(@Nullable DatabaseError error, @NonNull DatabaseReference ref) {
+                        Toast.makeText(MainActivity.this, "Push success", Toast.LENGTH_SHORT).show();
+                    }
+                });
             }
         });
         btnGetData.setOnClickListener(new View.OnClickListener() {
